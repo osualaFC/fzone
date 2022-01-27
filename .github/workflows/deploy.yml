@@ -33,6 +33,6 @@
             with:
               serviceAccountJson: service_account.json
               packageName: com.fredosuala.fzone
-              releaseFiles: app/bundle/outputs/bundle/release/app-release.aab
+              releaseFiles: app/release/app-release.aab
               track: internal
               whatsNewDirectory: whatsNewDirectory/
