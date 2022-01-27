@@ -19,20 +19,10 @@ android {
         }
     }
 
-    signingConfigs {
-        release {
-            storeFile file(System.getenv("HOME") + "/Users/fredrickosuala/Dev/fred/fzone/FZone.jks")
-            storePassword System.getenv("KEY_STORE_PASSWORD")
-            keyAlias System.getenv("KEY_ALIAS")
-            keyPassword System.getenv("KEY_PASSWORD")
-        }
-    }
-
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
         }
     }
     compileOptions {

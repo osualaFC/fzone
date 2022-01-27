@@ -28,11 +28,11 @@
           - name: Create service_account.json
             run: echo '${{ secrets.PLAY_CONFIG_JSON }}' > service_account.json
 
-          - name: Deploy to Alpha
+          - name: Deploy to Internal
             uses: r0adkll/upload-google-play@v1
             with:
               serviceAccountJson: service_account.json
               packageName: com.fredosuala.fzone
               releaseFiles: app/bundle/outputs/bundle/release/app-release.aab
-              track: alpha
+              track: internal
               whatsNewDirectory: whatsNewDirectory/
