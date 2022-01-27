@@ -21,10 +21,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("${keystore}")
-            storePassword "${keystore_password}"
-            keyAlias "${key_alias}"
-            keyPassword "${key_password}"
+            storeFile file(System.getenv("HOME") + "/Users/fredrickosuala/Dev/fred/fzone/FZone.jks")
+            storePassword System.getenv("KEY_STORE_PASSWORD")
+            keyAlias System.getenv("KEY_ALIAS")
+            keyPassword System.getenv("KEY_PASSWORD")
         }
     }
 
