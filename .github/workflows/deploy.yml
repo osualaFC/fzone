@@ -51,6 +51,7 @@
 
       distribute:
         name: Distribute App bundle to playstore
+        needs: apk
         runs-on: ubuntu-latest
         steps:
           - uses: actions/checkout@v2
