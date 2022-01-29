@@ -61,4 +61,5 @@
               packageName: com.fredosuala.fzone
               releaseFiles: app/release/app-release.aab
               track: alpha
+              status: draft
               whatsNewDirectory: whatsNewDirectory/
